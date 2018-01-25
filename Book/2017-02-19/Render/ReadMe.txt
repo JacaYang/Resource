@@ -306,6 +306,303 @@ http://radsite.lbl.gov/radiance/papers/sg92/paper.html
 Cited on p.
 15
 
+=================
+https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf
+
+metallic - the metallic-ness (0 = dielectric, 1 = metallic). This is a linear blend between two
+dierent models. The metallic model has no diuse component and also has a tinted incident
+specular, equal to the base color.
+
+
+5.3 Diuse model details
+Some models include a diuse Fresnel factor such as:
+(1 ?? F(l))(1 ?? F(d))
+
+
+DGTR2(h) = 2
+
+1
+(1 + (2 ?? 1) cos2 h)2
+
+
+
+FSchlick = F0 + (1 ?? F0)(1 ?? cos d)5
+The constant, F0, represents the specular re
+ectance at normal incidence and is achromatic for
+dielectrics and chromatic (i.e. tinted) for metals. The actual value depends on the index of refraction.
+Note that specular re
+ection comes from microfacets and thus F depends on d, the angle between
+the light vector and the micronormal (i.e. the half-vector), not the angle of incidence with the surface
+normal.
+
+
+
+References
+[1] Michael Ashikhmin. Distribution-based brdfs. Technical report, 2007.
+[2] Michael Ashikhmin, Simon Premoze, and Peter Shirley. A Microfacet-Based BRDF generator. In
+Sheila Homeyer, editor, Proceedings of the Computer Graphics Conference 2000 (SIGGRAPH-
+00), pages 65{74, New York, July 23{28 2000. ACMPress.
+[3] Michael Ashikhmin and Peter Shirley. An anisotropic Phong BRDF model. Journal of Graphics
+Tools: JGT, 5(2):25{32, 2000.
+[4] M. M. Bagher, C. Soler, and N. Holzschuch. Accurate tting of measured re
+ectances using a
+shifted gamma micro-facet distribution. Computer Graphics Forum, 31(4):1509{1518, 2012.
+19
+[5] P. Beckmann and A. Spizzichino. The scattering of electromagnetic waves from rough surfaces.
+MacMillan, 1963.
+[6] James F. Blinn. Models of light re
+ection for computer synthesized pictures. volume 11, pages
+192{198, July 1977.
+[7] R. L. Cook and K. E. Torrance. A re
+ectance model for computer graphics. Computer Graphics,
+15(3):307{316, 1981.
+[8] Arne Dur. An improved normalization for the Ward re
+ectance model. Journal of graphics, gpu,
+and game tools, 11(1):51{59, 2006.
+[9] Dave Edwards, Solomon Boulos, Jared Johnson, Peter Shirley, Michael Ashikhmin, Michael Stark,
+and Chris Wyman. The halfway vector disk for brdf modeling. ACM Trans. Graph., 25(1):1{18,
+January 2006.
+[10] David Geisler-Moroder and Arne Dur. A new Ward BRDF model with bounded albedo. Comput.
+Graph. Forum, 29(4):1391{1398, 2010.
+[11] Pat Hanrahan and Wolfgang Krueger. Re
+ection from layered surfaces due to subsurface scattering.
+In Proceedings of the 20th annual conference on Computer graphics and interactive techniques,
+SIGGRAPH '93, pages 165{174, New York, NY, USA, 1993. ACM.
+[12] Xiao D. He, Kenneth E. Torrance, Francois X. Sillion, and Donald P. Greenberg. A Comprehensive
+Physical Model for Light Re
+ection. In Computer Graphics (ACM SIGGRAPH '91 Proceedings),
+volume 25, pages 175{186, July 1991.
+[13] Csaba Kelemen, Laszlo Szirmay-Kalos, and Laszlo Szirmay-kalos. A microfacet based coupled
+specular-matte brdf model with importance sampling. Eurographics Short Presentations, 2001.
+[14] Murat Kurt, Laszlo Szirmay-Kalos, and Jaroslav Krivanek. An anisotropic brdf model for tting
+and monte carlo rendering. SIGGRAPH Comput. Graph., 44(1):3:1{3:15, February 2010.
+[15] Eric P. Lafortune, Sing-Choong Foo, Kenneth E. Torrance, and Donald P. Greenberg. Nonlinear
+approximation of re
+ectance functions. In Computer Graphics (ACM SIGGRAPH '97
+Proceedings), volume 31, pages 117{126, 1997.
+[16] Robert R. Lewis. Making Shaders More Physically Plausible. In Fourth Eurographics Workshop
+on Rendering, number Series EG 93 RW, pages 47{62, Paris, France, June 1993.
+[17] Joakim Low, Joel Kronander, Anders Ynnerman, and Jonas Unger. Brdf models for accurate and
+ecient rendering of glossy surfaces. ACM Trans. Graph., 31(1):9:1{9:14, February 2012.
+[18] Wojciech Matusik, Hanspeter Pster, Matt Brand, and Leonard McMillan. A data-driven re-
+
+ectance model. ACM Transactions on Graphics, 22(3):759{769, July 2003.
+[19] Laszlo Neumann, Attila Neumann, and Laszlo Szirmay-Kalos. Compact metallic re
+ectance models.
+Computer Graphics Forum, 18(3):161{172, September 1999. ISSN 1067-7055.
+[20] Laszlo Neumann, Attila Neumann, and Laszlo Szirmay-Kalos. Re
+ectance models by pumping
+up the albedo function. In Machine Graphics and Vision, pages 3{18, 1999.
+[21] Addy Ngan, Fredo Durand, and Wojciech Matusik. Experimental analysis of BRDF models. In
+Kavita Bala and Philip Dutre, editors, Eurographics Symposium on Rendering, pages 117{126,
+Konstanz, Germany, 2005. Eurographics Association.
+20
+[22] Ko Nishino and Stephen Lombardi. Directional statistics-based re
+ectance model for isotropic
+bidirectional re
+ectance distribution functions. J. Opt. Soc. Am. A, 28(1):8{18, Jan 2011.
+[23] Michael Oren and Shree K. Nayar. Generalization of lambert's re
+ectance model. In SIGGRAPH,
+pages 239{246. ACM, 1994.
+[24] Romain Pacanowski, Oliver Salazar Celis, Christophe Schlick, Xavier Granier, Pierre Poulin,
+and Annie Cuyt. Rational brdf. IEEE Transactions on Visualization and Computer Graphics,
+99(PrePrints), 2012.
+[25] Bui-T. Phong. Illumination for computer generated pictures. Communications of the ACM,
+18(6):311{317, June 1975.
+[26] Fabiano Romeiro, Yuriy Vasilyev, and Todd Zickler. Passive re
+ectometry. In Proceedings of
+the 10th European Conference on Computer Vision: Part IV, ECCV '08, pages 859{872, Berlin,
+Heidelberg, 2008. Springer-Verlag.
+[27] Iman Sadeghi, Heather Pritchett, Henrik Wann Jensen, and Rasmus Tamstorf. An artist friendly
+hair shading system. In ACM SIGGRAPH 2010 papers, SIGGRAPH '10, pages 56:1{56:10, New
+York, NY, USA, 2010. ACM.
+[28] Christophe Schlick. An Inexpensive BRDF Model for Physically-Based Rendering. Computer
+Graphics Forum, 13(3):233{246, 1994.
+[29] B. Smith. Geometrical shadowing of a random rough surface. IEEE Trans. Ant. and Propagation,
+AP-15(5):668{671, September 1967.
+[30] K. Torrance and E. Sparrow. Theory for o-specular re
+ection from roughened surfaces. J. Optical
+Soc. America, 57:1105{1114, 1967.
+[31] S. Trowbridge and K. P. Reitz. Average irregularity representation of a rough ray re
+ection.
+Journal of the Optical Society of America, 65(5):531{536, May 1975.
+[32] Bruce Walter. Notes on the Ward BRDF. Technical Report PCG-05-06, Cornell Program of
+Computer Graphics, 2005.
+[33] Bruce Walter, Stephen R. Marschner, Hongsong Li, and Kenneth E. Torrance. Microfacet models
+for refraction through rough surfaces. In Proceedings of the Eurographics Symposium on Rendering,
+2007.
+[34] Gregory J. Ward. Measuring and modeling anisotropic re
+ection. In Edwin E. Catmull, editor,
+Computer Graphics (SIGGRAPH '92 Proceedings), volume 26, pages 265{272, July 1992.
+[35] L. B. Wol, S. K. Nayar, and M. Oren. Improved diuse re
+ection models for computer vision.
+International Journal of Computer Vision, 30(1):55{71, October 1998.
+A Selected history of BRDF models used in graphics
+ Beckmann 1963 [5] provided a model for scattering from rough surfaces based on a Gaussian
+distribution of surface slopes.
+ Torrance and Sparrow 1967 [30] introduced the microfacet model. A Gaussian distribution of
+microfacet angles was assumed and a microfacet shadowing factor was derived from simplied
+geometric assumptions.
+21
+ Smith 1967 [29] derived a shadowing function from the microfacet distribution. Notably, this
+shadowing function varied with surface roughness.
+ Phong 1975 [25] proposed a computationally simple model of a specular highlight using an exponentiated
+cosine.
+ Trowbridge and Reitz 1975 [31] derived a new microfacet distribution based on average surface
+irregularity of curved microsurfaces derived from an ellipsoid of revolution. They t their model
+to measured data for rough glass and compared their results with Gaussian, Beckmann, Sirohi,
+and Berry distributions.
+ Blinn 1977 [6] implemented the Torrance-Sparrow model with the Trowbridge-Reitz distribution
+(chosen for its computational eciency as well as its physical basis). Blinn also proposed a
+microfacet distribution based based on the Phong model, commonly referred to as \Blinn Phong,"
+by adapting it to the more physically-correct half-vector formulation.
+ Cook and Torrance 1981 [7] implemented the Torrance-Sparrow model with the Beckmann distribution
+and studied spectral shifts due to the Fresnel factor.
+ He, Torrance, Sillion, and Greenberg 1991 [12] presented a model that included specular, directional
+diuse, and uniform diuse components. The model is derived for polarized light and
+simplied for unpolarized light.
+ Ward 1992 [34] presented an anisotropic specular model derived from the Beckmann distribution.
+Walter 2005 [32] provided a more ecient exact implementation.
+ Lewis 1993 [16] proposed a \modied Phong" model that included a normalization term for
+energy conservation.
+ Hanrahan and Krueger 1993 [11] developed a diuse BRDF model that approximates subsurface
+transport.
+ Oren and Nayar 1994 [23] derived a diuse model for rough surfaces based on Lambertian microfacets.
+ Schlick 1994 [28] developed rational approximations to the various components of the microfacet
+model. The Schlick Fresnel approximation is widely used. Also, Schlick recognized the discontinuity
+in the Torrance-Sparrow shadowing term and suggested an approximation of the Smith
+shadowing function as an alternative. Schlick also presented an approximation to the Beckmann
+distribution.
+ Lafortune 1997 [15] proposed using a sum of arbitrarily-oriented Phong lobes as the basis for a
+general model.
+ Wol, Nayar and Oren 1998 [35] developed an improved diuse model for very smooth surfaces
+which are darker at grazing angles than Lambert diuse due to the Fresnel eect. This model is
+also combined in an approximate form with the Oren Nayar model to represent a continuum of
+smooth to rough diuse surfaces.
+ Neumann et al. 1999 [19] proposed a \stretched Phong" model intended for metallic surfaces
+that has an albedo that becomes 
+at as the surface becomes shiny.
+22
+ Neumann et al. 1999b [20] proposed a process to \pump up" the albedo of arbitrary BRDFs to
+improve energy balance. Previous models were shown to have an albedo that falls o too quickly
+with incident angle (except for the Ward model which is shown to diverge at grazing incidence).
+Each iterative pump-up divides the BRDF by a measured correction factor making the albedo
+progressively 
+atter.
+ Ashikhmin, Premoze, and Shirley 2000 [2] derived a shadowing function from numeric integration
+of arbitrary microfacet distributions.
+ Ashikhmin and Shirley 2000 [3] presented a anisotropic Phong model that included a Fresnelweighted
+diuse and energy conservation guarantees.
+ Kelemen and Szirmay-Kalos 2001 [13] proposed an alternative shadowing term that approximates
+the Torrance-Sparrow shadowing function with a dierentiable form. A coupled-diuse model is
+also proposed such that the total albedo is always 1.
+ Dur 2006 [8] improved the energy balance of the Ward model.
+ Edwards et al. 2006 [9] proposed the \halfway vector disk" as a new domain for modeling
+specular distributions with the goal of perfect energy conservation (albedo = 1). An alternate
+non-conservative form is also presented for data tting.
+ Ashikhmin and Premoze 2007 [1] presented the \distribution BRDF" which smooths out the
+discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating
+specular distributions from backscattering images (such as from a single 
+ash-lit photograph) is
+also provided.
+ Walter et al. 2007 [33] derived Smith shadowing functions for the Phong and GGX distributions
+and provided an approximation of Smith shadowing for the Beckmann distribution. Note: GGX
+is equivalent to the Trowbridge-Reitz distribution.
+ Romeiro et al. 2008 [26] showed than the MERL materials are well-represented by a simple
+bivariate form, (h; thetad) and exploited this fact to proposed a simplied BRDF capture
+method.
+ Geisler-Moroder and Dur 2010 [10] further rened this model to restore Helmholtz reciprocity
+and guarantee energy conservation.
+ Kurt et al 2010 [14] extended the Beckmann distribution to anisotropic form and proposed a
+new parameterized shadowing function giving control over albedo and improving tting for some
+materials. Two specular lobes are suggested for tting many of the MERL materials.
+ Nishino and Lombardi 2011 [22] proposed the \hemispherical exponential power distribution" or
+\Hemi-EPD" which has an additional degree of freedom to improve tting power. The Hemi-
+EPD is used as a basis for the entire BRDF and parameters are t to individual d slices and
+interpolated. Additionally, multiple lobes per d slice are required for many materials.
+ Low et al. 2012 [17] proposed a new \ABC" microfacet distribution inspired by Rayleigh-Rice
+smooth-surface scattering theory. Additionally, the \projected deviation vector" is presented as
+an alternative to the half-vector parameterization for data tting.
+ Pacanowski et al. 2012 [24] developed a framework for tting rational functions to general
+isotropic BRDFs over the (h; d) domain. An anisotropic form is also proposed as a simple
+scaling of the isotropic form with respect to h.
+23
+ Bagher et al. 2012 [4] proposed a new \shifted gamma" or \SGD" microfacet distribution derived
+to t the range of observed slopes in the MERL database. An approximation of the Smith
+shadowing function for the SGD distribution is provided. Additionally, the Fresnel term is
+modied with a correction term providing an additional degree of freedom, improving tting
+ability.
+
+================
+¸ß¹âBRDF»¯¼ò¹«Ê½
+http://blog.csdn.net/xuexiaokkk/article/details/48489289
+
+=====================
+Unity5 GIÓëPBSäÖÈ¾´ÓÓÃ·¨µ½×ÅÉ«´úÂë
+https://www.cnblogs.com/zhouxin/p/5168632.html
+References
+[1] Hoffman 2013, "Background: Physics and Math of Shading"
+[2] Blinn 1977, "Models of light reflection for computer synthesized pictures"
+[3] Beckmann 1963, "The scattering of electromagnetic waves from rough surfaces"
+[4] Walter et al. 2007, "Microfacet models for refraction through rough surfaces"
+[5] Burley 2012, "Physically-Based Shading at Disney"
+[6] Neumann et al. 1999, "Compact metallic reflectance models"
+[7] Kelemen 2001, "A microfacet based coupled specular-matte brdf model with importance sampling"
+[8] Smith 1967, "Geometrical shadowing of a random rough surface"
+[9] Schlick 1994, "An Inexpensive BRDF Model for Physically-Based Rendering"
+[10] Karis 2013, "Real Shading in Unreal Engine 4"
+[11] Cook and Torrance 1982, "A Reflectance Model for Computer Graphics"
+[12] Reed 2013, "How Is the NDF Really Defined?"  
+======================
+»ùÓÚÎïÀíµÄäÖÈ¾¡ª¸ü¾«È·µÄÎ¢±íÃæ·Ö²¼º¯ÊýGGX
+https://blog.uwa4d.com/archives/1582.html
+ÏÂÔØÁ´½Ó£º
+http://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.html
+
+²Î¿¼ÎÄÏ×£º
+¡¾1¡¿ P.Beckmann and A. Spizzichino, The Scattering of Electromagnetic Waves from Rough Surfaces, Pergamon Press, New York 1963.
+¡¾2¡¿ http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf
+¡¾3¡¿ K.E.Torrance, E. M. Sparrow : Theory for off-specular reflection from roughened surfaces. Journal of Optical Society of America 57, 9(1967), 1105¨C1114.
+¡¾4¡¿ https://blogs.unity3d.com/cn/2016/01/25/ggx-in-unity-5-3/
+
+ÕâÊÇÙ§»¢¿Æ¼¼µÚ203ÆªÔ­´´ÎÄÕÂ£¬»¶Ó­×ª·¢·ÖÏí£¬Î´¾­×÷ÕßÊÚÈ¨ÇëÎð×ªÔØ¡£Èç¹ûÄúÒ²ÓÐÈÎºÎ¶Àµ½µÄ¼û½â»òÕßÈ«ÐÂµÄ·¢ÏÖÒ²»¶Ó­ÁªÏµÎÒÃÇ£¬Ò»ÆðÌ½ÌÖ¡££¨QQÈº465082844£©
+============================
+»ùÓÚÎïÀí×ÅÉ«(PBS)¼°UnityÖÐµÄÊµÏÖ
+http://blog.csdn.net/liumazi/article/details/72927529
+È«¾Ö¹âÕÕ¼¼Êõ£º´ÓÀëÏßµ½ÊµÊ±äÖÈ¾     http://www.thegibook.com/
+
+Unity Shader ÈëÃÅ¾«Òª     https://github.com/candycat1992/Unity_Shaders_Book
+
+»ùÓÚÎïÀí×ÅÉ«ÏµÁÐ     https://zhuanlan.zhihu.com/p/20091064
+
+»ùÓÚÎïÀíµÄBRDF     http://www.klayge.org/wiki/index.php/%E5%9F%BA%E4%BA%8E%E7%89%A9%E7%90%86%E7%9A%84BRDF
+
+»ùÓÚÎïÀíµÄäÖÈ¾¡ªµÏÊ¿ÄáµÄäÖÈ¾Ä£ÐÍ     https://zhuanlan.zhihu.com/p/25427105
+=====================
+¸ß¹âBRDF»¯¼ò¹«Ê½×Ü½á£¨×ª£©
+http://blog.csdn.net/aidlife/article/details/46792177
+References
+[1] Hoffman 2013, "Background: Physics and Math of Shading"
+[2] Blinn 1977, "Models of light reflection for computer synthesized pictures"
+[3] Beckmann 1963, "The scattering of electromagnetic waves from rough surfaces"
+[4] Walter et al. 2007, "Microfacet models for refraction through rough surfaces"
+[5] Burley 2012, "Physically-Based Shading at Disney"
+[6] Neumann et al. 1999, "Compact metallic reflectance models"
+[7] Kelemen 2001, "A microfacet based coupled specular-matte brdf model with importance sampling"
+[8] Smith 1967, "Geometrical shadowing of a random rough surface"
+[9] Schlick 1994, "An Inexpensive BRDF Model for Physically-Based Rendering"
+[10] Karis 2013, "Real Shading in Unreal Engine 4"
+[11] Cook and Torrance 1982, "A Reflectance Model for Computer Graphics"
+[12] Reed 2013, "How Is the NDF Really Defined?"
+
+
+
+
+
+
+
+
+
 
 
 
