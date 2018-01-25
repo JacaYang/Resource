@@ -63,7 +63,6 @@ https://www.allegorithmic.com/system/files/software/download/build/PBR_Guide_Vol
 
 f (l,v) = fLambert (l,v)(1? Fmacro (v,n))+ fCook?Torrance (l,v)
 
-http://renderwonk.com/publications/s2010-shading-course/hoffman/
-s2010_physically_based_shading_hoffman_a_notes.pdf
+http://renderwonk.com/publications/s2010-shading-course/hoffman/s2010_physically_based_shading_hoffman_a_notes.pdf
 
 
