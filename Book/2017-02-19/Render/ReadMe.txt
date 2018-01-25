@@ -56,9 +56,12 @@ http://developer.amd.com/wordpress/media/2012/10/Tatarchuk_Irradiance_Volumes.pd
 The Irradiance Volume
 https://pdfs.semanticscholar.org/40cb/9a27cfd69a5c5c891741ce02961d2d76c639.pdf?_ga=1.233735774.1506007508.1478184009
 
+=================
+¶«Æ´Î÷´ÕPBR£ºPBR»ù´¡.pdf
 
+https://www.allegorithmic.com/system/files/software/download/build/PBR_Guide_Vol.1.pdf
 
-
+f (l,v) = fLambert (l,v)(1? Fmacro (v,n))+ fCook?Torrance (l,v)
 
 
 
