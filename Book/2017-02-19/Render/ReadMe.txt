@@ -537,9 +537,6 @@ ability.
 高光BRDF化简公式
 http://blog.csdn.net/xuexiaokkk/article/details/48489289
 
-=====================
-Unity5 GI与PBS渲染从用法到着色代码
-https://www.cnblogs.com/zhouxin/p/5168632.html
 References
 [1] Hoffman 2013, "Background: Physics and Math of Shading"
 [2] Blinn 1977, "Models of light reflection for computer synthesized pictures"
@@ -552,7 +549,12 @@ References
 [9] Schlick 1994, "An Inexpensive BRDF Model for Physically-Based Rendering"
 [10] Karis 2013, "Real Shading in Unreal Engine 4"
 [11] Cook and Torrance 1982, "A Reflectance Model for Computer Graphics"
-[12] Reed 2013, "How Is the NDF Really Defined?"  
+[12] Reed 2013, "How Is the NDF Really Defined?"
+
+=====================
+Unity5 GI与PBS渲染从用法到着色代码
+https://www.cnblogs.com/zhouxin/p/5168632.html
+ 
 ======================
 基于物理的渲染—更精确的微表面分布函数GGX
 https://blog.uwa4d.com/archives/1582.html
@@ -595,18 +597,31 @@ References
 [11] Cook and Torrance 1982, "A Reflectance Model for Computer Graphics"
 [12] Reed 2013, "How Is the NDF Really Defined?"
 
+==============
+高光BRDF化简公式
+http://blog.csdn.net/xuexiaokkk/article/details/48489289
 
+[5] Burley 2012, "Physically-Based Shading at Disney"
+http://blog.selfshadow.com/publications/s2012-shading-course/
 
+=================
+http://blog.selfshadow.com/publications/s2012-shading-course/
 
+11:15 Physically Based Shading at Disney (Brent Burley) [slides: keynote, pdf] [course notes]
 
+================
+http://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_slides_v2.pdf
 
-
-
-
-
-
-
-
+高光BRDF化简公式
+http://blog.csdn.net/xuexiaokkk/article/details/48489289
+点击
+[5] Burley 2012, "Physically-Based Shading at Disney"
+进入
+http://blog.selfshadow.com/publications/s2012-shading-course/
+点击
+11:15 Physically Based Shading at Disney (Brent Burley) [slides: keynote, pdf] [course notes]
+进入
+http://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_slides_v2.pdf
 
 
 
