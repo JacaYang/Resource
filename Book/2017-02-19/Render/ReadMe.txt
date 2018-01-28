@@ -66,7 +66,17 @@ f (l,v) = fLambert (l,v)(1? Fmacro (v,n))+ fCook?Torrance (l,v)
 http://renderwonk.com/publications/s2010-shading-course/hoffman/s2010_physically_based_shading_hoffman_a_notes.pdf
 
 ==================
+?金金属?高光可能有颜?色（F0有颜?色），?非?金金属?高光?无颜?色（F0为灰度
+
 https://www.allegorithmic.com/system/files/software/download/build/PBR_Guide_Vol.1.pdf
+
+page 9
+It is the F0 reflectance value that we
+are concerned with in regards to
+authoring our textures. Non-metals
+(dielectrics/insulators) will have a
+greyscale value and metals (conductors)
+will have an RGB value.
 
 F0 (Fresnel Reflectance at 0 Degrees)
 
@@ -624,7 +634,11 @@ http://blog.selfshadow.com/publications/s2012-shading-course/
 http://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_slides_v2.pdf
 
 =====================
+Schlick's approximation 是非导体近似
+
 https://en.wikipedia.org/wiki/Schlick%27s_approximation
+
+In 3D computer graphics, Schlick's approximation, named after Christophe Schlick, is a formula for approximating the contribution of the Fresnel factor in the specular reflection of light from a non-conducting interface (surface) between two media.[1]
 
 See also
 
