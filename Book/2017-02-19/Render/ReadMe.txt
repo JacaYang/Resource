@@ -623,10 +623,21 @@ http://blog.selfshadow.com/publications/s2012-shading-course/
 ½øÈë
 http://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_slides_v2.pdf
 
+=====================
+https://en.wikipedia.org/wiki/Schlick%27s_approximation
 
+See also
 
+Computer graphics portal 
 
+Phong reflection model
+Blinn-Phong shading model
+Fresnel equations
 
+References
+
+Schlick, C. (1994). "An Inexpensive BRDF Model for Physically-based Rendering" (PDF). Computer Graphics Forum. 13 (3): 233. doi:10.1111/1467-8659.1330233.
+Hoffman, Naty (2013). "Background: Physics and Math of Shading" (PDF). Fourth International Conference and Exhibition on Computer Graphics and Interactive Techniques.
 
 
 
