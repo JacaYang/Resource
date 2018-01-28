@@ -653,7 +653,10 @@ References
 Schlick, C. (1994). "An Inexpensive BRDF Model for Physically-based Rendering" (PDF). Computer Graphics Forum. 13 (3): 233. doi:10.1111/1467-8659.1330233.
 Hoffman, Naty (2013). "Background: Physics and Math of Shading" (PDF). Fourth International Conference and Exhibition on Computer Graphics and Interactive Techniques.
 
-
+===============
+漫反射菲尼尔系数
+这应该是个至今尚无定论的问题，版本很多，各种配比系数都有使用，我选了一个自己认为有道理的。
+https://www.allegorithmic.com/system/files/software/download/build/PBR_Guide_Vol.1.pdf 
 
 
 
