@@ -658,7 +658,11 @@ Hoffman, Naty (2013). "Background: Physics and Math of Shading" (PDF). Fourth In
 这应该是个至今尚无定论的问题，版本很多，各种配比系数都有使用，我选了一个自己认为有道理的。
 https://www.allegorithmic.com/system/files/software/download/build/PBR_Guide_Vol.1.pdf 
 
-
+=============
+var(恐龙蛋)(350479720) 9:40:37
+寒霜的这个屏幕空间反射有人看过吗?
+var(恐龙蛋)(350479720) 9:40:52
+http://www.cse.chalmers.se/edu/year/2017/course/TDA361/Advanced%20Computer%20Graphics/Screen-space%20reflections.pdf
 
 
 
