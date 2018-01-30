@@ -664,5 +664,92 @@ var(恐龙蛋)(350479720) 9:40:37
 var(恐龙蛋)(350479720) 9:40:52
 http://www.cse.chalmers.se/edu/year/2017/course/TDA361/Advanced%20Computer%20Graphics/Screen-space%20reflections.pdf
 
+================
+s2010_physically_based_shading_hoffman_a_notes.pdf
+
+cspec looks like an ideal parameter for a Fresnel re°ectance approximation, and indeed Schlick [22]
+gives a cheap and reasonably accurate approximation that uses it:
+FSchlick(cspec; l; n) = cspec + (1 ? cspec)(1 ? (l ￠ n))5 (5)
+This approximation is widely used in computer graphics. In the special case of active microfacets,
+h must be substituted for the surface normal n:
+FSchlick(cspec; l; h) = cspec + (1 ? cspec)(1 ? (l ￠ h))5 (6)
+To know which values are reasonable to assign to cspec, it is instructive to look at the values of F(0±)
+for various real-world materials. These can be found in Table 1. Values are given in both linear and
+gamma (sRGB) space; we recommend anyone unfamiliar with the importance of computing shading in
+linear space and the issues involved in converting input from gamma space consult some of the articles
+on the topic ([14, 15]).
+
+
+Although there are several models for subsurface local re°ection in the literature, the most widely-used
+one by far is the Lambertian BRDF term. The Lambertian BRDF is actually a constant value; the
+well-known cosine or (n ￠ l) factor is part of the re°ection equation, not the BRDF (as we saw in
+Equation 1). The exact value of the Lambertian BRDF is:
+fLambert(l; v) =
+cdi?
+?
+: (7)
+
+Practical Implementation of Physically-Based Shading Models at tri-Ace
+gives a specular implementation for constant and SH ambient, a recent presentation by Bungie [5]
+discusses applying the Cook-Torrance [7, 8] specular term to SH lighting, and a ShaderX7 article
+by Sch?uler [23] describes an implementation of a physically-based specular term with hemispherical
+lighting.
+
+Other aspects of image-based lighting in ˉlm production are discussed in Ben Snow's
+talk in this course, Terminators and Iron Men: Image-Based Lighting and Physical Shading at ILM,
+and some aspects of shading with environment maps for video games are discussed in Naty Ho?man's
+other talk, Crafting Physically Motivated Shading Models for Game Development.
+
+===============
+Ogre 就是完全参考这里实现的
+s2013_pbs_epic_notes_v2.pdf
+
+f(l; v) =
+cdiff
+
+
+Specular D
+For the normal distribution function (NDF), we found Disney’s choice of GGX/Trowbridge-Reitz to
+be well worth the cost. The additional expense over using Blinn-Phong is fairly small, and the distinct,
+natural appearance produced by the longer “tail” appealed to our artists. We also adopted Disney’s
+reparameterization of  = Roughness2.
+D(h) =
+2
+ ((n  h)2 (2 ?? 1) + 1)2 (3)
+Specular G
+We evaluated more options for the specular geometric attenuation term than any other. In the end,
+we chose to use the Schlick model [19], but with k = /2, so as to better fit the Smith model for
+GGX [21]. With this modification, the Schlick model exactly matches Smith for  = 1 and is a fairly
+close approximation over the range [0, 1] (shown in Figure 2). We also chose to use Disney’s modification
+to reduce “hotness” by remapping roughness using Roughness+1
+2 before squaring. It’s important to note
+that this adjustment is only used for analytic light sources; if applied to image-based lighting, the
+results at glancing angles will be much too dark.
+k =
+(Roughness + 1)2
+8
+G1(v) =
+n  v
+(n  v)(1 ?? k) + k
+G(l; v; h) = G1(l)G1(v) (4)
+Specular F
+For Fresnel, we made the typical choice of using Schlick’s approximation [19], but with a minor modification:
+we use a Spherical Gaussian approximation [10] to replace the power. It is slightly more
+efficient to calculate and the difference is imperceptible. The formula is:
+F(v; h) = F0 + (1 ?? F0) 2 (??5:55473(vh)??6:98316)(vh) (5)
+Where F0 is the specular reflectance at normal incidence.
+3
+
+
+
+
+
+
+
+
+
+
+
+
 
 
