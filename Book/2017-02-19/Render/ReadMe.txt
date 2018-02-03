@@ -740,9 +740,14 @@ F(v; h) = F0 + (1 ?? F0) 2 (??5:55473(vh)??6:98316)(vh) (5)
 Where F0 is the specular reflectance at normal incidence.
 3
 
+================
+Lazarov-Physically-Based-Lighting-in-Black-Ops (Siggraph 2011 Advances in Real-Time Rendering Course).pptx
 
+[25] Lazarov, ¡°Physically Based Lighting in Call of Duty: Black Ops¡± http://advances.realtimerendering.com/s2011/Lazarov-Physically-Based-Lighting-in-Black-Ops%20(Siggraph%202011%20Advances%20in%20Real-Time%20Rendering%20Course).pptx
 
-
+²Î¿¼
+Adopting a physically based shading model
+https://seblagarde.wordpress.com/2011/08/17/hello-world/
 
 
 
