@@ -780,6 +780,21 @@ https://computergraphics.stackexchange.com/questions/2285/how-to-properly-combin
 In his largely referenced article on PBR, S¨¦bastien Lagarde even states that using (1?F) to weight the diffuse term is incorrect.
 
 
+=============
+Adopting a physically based shading model
+https://seblagarde.wordpress.com/2011/08/17/hello-world/
+
+Edit : This section is not up to date. Read Spherical Gaussian approximation for Blinn-Phong, Phong and Fresnel for full details.
+
+
+Spherical Gaussian approximation for Blinn-Phong, Phong and Fresnel
+https://seblagarde.wordpress.com/2012/06/03/spherical-gaussien-approximation-for-blinn-phong-phong-and-fresnel/
+
+===============
+Spherical Gaussian approximation for Blinn-Phong, Phong and Fresnel
+https://seblagarde.wordpress.com/2012/06/03/spherical-gaussien-approximation-for-blinn-phong-phong-and-fresnel/
+
+
 
 
 
