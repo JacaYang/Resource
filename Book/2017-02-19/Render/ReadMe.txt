@@ -769,6 +769,18 @@ Two textures: color and metalness
 If metalness is 1 then color is treated as specular color and diffuse color is assumed to be black
 If metalness is 0 then color is treated as diffuse color and specular color is assumed to be 0.03 linear
 
+================
+Adopting a physically based shading model
+https://seblagarde.wordpress.com/2011/08/17/hello-world/
+
+²Î¿¼
+How to properly combine the diffuse and specular terms?
+https://computergraphics.stackexchange.com/questions/2285/how-to-properly-combine-the-diffuse-and-specular-terms
+
+In his largely referenced article on PBR, S¨¦bastien Lagarde even states that using (1?F) to weight the diffuse term is incorrect.
+
+
+
 
 
 
