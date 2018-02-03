@@ -743,13 +743,31 @@ Where F0 is the specular reflectance at normal incidence.
 ================
 Lazarov-Physically-Based-Lighting-in-Black-Ops (Siggraph 2011 Advances in Real-Time Rendering Course).pptx
 
+下载地址
 [25] Lazarov, “Physically Based Lighting in Call of Duty: Black Ops” http://advances.realtimerendering.com/s2011/Lazarov-Physically-Based-Lighting-in-Black-Ops%20(Siggraph%202011%20Advances%20in%20Real-Time%20Rendering%20Course).pptx
 
 参考
 Adopting a physically based shading model
 https://seblagarde.wordpress.com/2011/08/17/hello-world/
 
+内容
+Primary Diffuse
+Classic Lambert term 
+Modulated by the shadow and the diffuse albedo
+Secondary Diffuse
+Reconstructed from lightmap/lightgrid secondary irradiance with per-pixel normal, modulated by the diffuse albedo
 
+Primary Specular
+Microfacet BRDF
+Modulated by the shadow and the “diffuse” cosine factor
+Secondary Specular
+Reconstructed from environment probe with per-pixel normal and Fresnel term, also tied to secondary irradiance
+Based on same BRDF parameters as primary specular
+
+
+Two textures: color and metalness
+If metalness is 1 then color is treated as specular color and diffuse color is assumed to be black
+If metalness is 0 then color is treated as diffuse color and specular color is assumed to be 0.03 linear
 
 
 
