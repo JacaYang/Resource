@@ -991,20 +991,34 @@ s2014_pbs_frostbite_slides.pdf
 Our#specular#term#is#a#tradi1onal#microfacet#model,#using#Schlick¡¯s#approxima1on#of#
 the#Fresnel#func1on,#and#the#GGX#Normal#Distribu1on#Func1on#(NDF).#
 
+Here#is#a#simple#comparison.#First#the#uncorrelated#Smith#G#term,#for#a#dielectric#
+material#with#black#diffuse#(top)#and#a#metal#material#(boSom).#
 
+We#have#inves1gated#proper#deriva1ons#from#the#GGX#distribu1on#as#[Gotanda14],#
+but#we#went#for#Disney¡¯s#diffuse#model#(from#[Burley12])#as#it#is#simple#and#good#
+enough.#
 
+As#a#quick#reminder#of#Disney¡¯s#diffuse#model,#here#is#a#comparison.#This#is#
+Lamber1an#diffuse,#which#is#the#same#for#all#roughness#values.#
 
+This#covers#a#few#types:#
+O#A#distant#light#probe#for#parallaxOfree#far#ligh1ng#
+O#Local#light#probes,#for#local#ligh1ng,#with#parallax#
+O#Screen#space#reflec1ons,#for#closeOrange#ligh1ng#(suppor1ng#glossy#reflec1on)#
+O#Planar#reflec1ons#as#an#alterna1ve#to#SSR#
 
+References
+Brent Burley, "Physically Based Shading at Disney" SIGGRAPH12, PBR Course
+Brain Karis, "Real Shading in Unreal Engine 4" , SIGRRAPH3, PBR Course
 
+==============
+bing 	Real Shading in Unreal Engine 4
+Real Shading in Unreal Engine 4
+https://cdn2.unrealengine.com/Resources/files/2013SiggraphPresentationsNotes-26915738.pdf
 
-
-
-
-
-
-
-
-
+===============
+bing	Physically Based Shading at Disney
+Physically Based Shading at Disney
 
 
 
