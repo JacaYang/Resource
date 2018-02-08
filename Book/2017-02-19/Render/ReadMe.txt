@@ -1040,7 +1040,20 @@ selfshadow committed on 23 Feb 2017
 
 This modification yields more correct behaviour for anisotropic materials and removes the previous ad hoc roughness remapping (roughness*.5 + .5). This better reflects current practice at Disney, as discussed in the ¡°Specular G revisited¡± addendum of the ¡°Physically Based Shading at Disney¡± SIGGRAPH¡¯12 course notes (http://blog.selfshadow.com/publications/s2012-shading-course/).
 
+
 http://blog.selfshadow.com/publications/s2012-shading-course/
+
+==========================
+http://blog.selfshadow.com/publications/s2012-shading-course/
+
+09:00 Introduction: The Importance of Physically Based Shading (Stephen Hill) [slides: ppt, pdf]
+09:05 Background: Physics and Math of Shading (Naty Hoffman) [slides] [course notes] [notebook: mathematica, pdf]
+09:30 Calibrating Lighting and Materials in Far Cry 3 (Stephen McAuley) [slides: ppt, pdf] [video] [course notes]
+10:00 Beyond a Simple Physically Based Blinn-Phong Model in Real-Time (Yoshiharu Gotanda) [slides: ppt, pdf] [course notes]
+10:30 Break
+10:45 Physical Production Shaders with OSL (Adam Martinez) [slides] [course notes]
+11:15 Physically Based Shading at Disney (Brent Burley) [slides: keynote, pdf] [course notes]
+11:45 Reflection Model Design for WALL-E and Up (Brian Smits) [slides: keynote, pdf] [notebook: mathematica, pdf] 
 
 
 
