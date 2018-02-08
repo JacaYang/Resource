@@ -956,6 +956,67 @@ A wide variety of microfacet distribution functions D
 have been proposed. In this paper, we discuss three different
 types: Beckmann, Phong, and GGX.
 
+================
+Siggraph 2014 : Moving Frostbite to Physically based rendering V3
+https://seblagarde.wordpress.com/2015/07/14/siggraph-2014-moving-frostbite-to-physically-based-rendering/
+
+http://www.cs.virginia.edu/~jdl/bib/appearance/analytic%20models/he91.pdf
+http://www.cs.cornell.edu/~srm/publications/egsr07-btdf.pdf
+http://www.geometrictools.com/Documentation/DistanceToCircle3.pdf
+http://holger.dammertz.org/stuff/notes_HammersleyOnHemisphere.html
+
+getSample is a GPU random number generator,
+It is implemented to generate a stochastic samples to reduce the number of samples required to get good result.
+
+A typical implementation will use Hammersley on GPU
+
+http://holger.dammertz.org/stuff/notes_HammersleyOnHemisphere.html
+
+float radicalInverse_VdC(uint bits) {
+bits = (bits <> 16u);
+bits = ((bits & 0x55555555u) <> 1u);
+bits = ((bits & 0x33333333u) <> 2u);
+bits = ((bits & 0x0F0F0F0Fu) <> 4u);
+bits = ((bits & 0x00FF00FFu) <> 8u);
+return float(bits) * 2.3283064365386963e-10; // / 0x100000000
+}
+
+vec2 hammersley2d(uint i, uint N) {
+return vec2(float(i)/float(N), radicalInverse_VdC(i));
+}
+
+=================
+s2014_pbs_frostbite_slides.pdf
+
+Our#specular#term#is#a#tradi1onal#microfacet#model,#using#Schlick¡¯s#approxima1on#of#
+the#Fresnel#func1on,#and#the#GGX#Normal#Distribu1on#Func1on#(NDF).#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
