@@ -794,6 +794,83 @@ https://seblagarde.wordpress.com/2012/06/03/spherical-gaussien-approximation-for
 Spherical Gaussian approximation for Blinn-Phong, Phong and Fresnel
 https://seblagarde.wordpress.com/2012/06/03/spherical-gaussien-approximation-for-blinn-phong-phong-and-fresnel/
 
+===============
+Siggraph 2014 : Moving Frostbite to Physically based rendering V3
+https://seblagarde.wordpress.com/tag/physically-based-rendering/
+
+==============
+Article - Physically Based Rendering
+http://www.codinglabs.net/article_physically_based_rendering.aspx
+
+Physics terms
+
+If we want to properly understand the rendering equation we need to capture the meaning of some physical quantities; the most important of these quantities is called radiance (represented with L
+
+in the formula). 
+Radiance is a tricky thing to understand, as it is a combination of other physics quantities, therefore, before formally define it, we will introduce a few other quantities.
+
+Radiant Flux: The radiant flux is the measure of the total amount of energy, emitted by a light source, expressed in Watts. We will represent the flux with the Greek letter ¦µ
+
+. 
+Any light source emits energy, and the amount of emitted energy is function of the wavelength. 
+Figure 1: Daylight spectral distribution
+
+In figure 1 we can see the spectral distribution for day light; the radiant flux is the area of the function (to be exact, the area is the luminous flux, as the graph is limiting the wavelength to the human visible spectrum). For our purposes we will simplify the radiant flux with an RGB colour, even if this means losing a lot of information. 
+
+Solid angle: It's a way to measure how large an object appears to an observer looking from a point. To do this we project the silhouette of the object onto the surface of a unit sphere centred in the point we are observing from. The area of the shape we have obtained is the solid angle. In Figure 2 you can see the solid angle ¦Ø
+
+as a projection of the light blue polygon on the unit sphere.
+Figure 2: Solid angle
+ 
+
+Radiant Intensity: is the amount of flux per solid angle. If you have a light source that emits in all directions, how much of that light (flux) is actually going towards a specific direction? Intensity is the way to answer to that, it's the amount of flux that is going in one direction passing through a defined solid angle. The formula that describes it is I=d¦µd¦Ø
+, where ¦µ is the radiant flux and ¦Ø
+
+is the solid angle.
+Figure 3: Light intensity
+
+Radiance: finally, we get to radiance. Radiance formula is:
+
+L=d?2dAd¦Øcos¦È
+
+=================
+https://seblagarde.files.wordpress.com/2015/07/s2014_pbs_frostbite_slides.pdf
+
+Siggraph 2014 : Moving Frostbite to Physically based rendering V3
+https://seblagarde.wordpress.com/tag/physically-based-rendering/
+
+==================
+Rendering equation
+https://en.wikipedia.org/wiki/Rendering_equation
+
+Article - Physically Based Rendering
+http://www.codinglabs.net/article_physically_based_rendering.aspx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
