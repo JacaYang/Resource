@@ -1019,16 +1019,28 @@ https://cdn2.unrealengine.com/Resources/files/2013SiggraphPresentationsNotes-269
 ===============
 bing	Physically Based Shading at Disney
 Physically Based Shading at Disney
+http://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_notes_v3.pdf
+
+===============
+s2012_pbs_disney_brdf_notes_v3.pdf
+
+To examine the MERL measured materials and compare with analytic models, we developed a new
+tool, the BRDF Explorer, shown in Figure 2. It is available as open source at github.com/wdas/brdf
+and has the following features:
+
+github.com/wdas/brdf
+
+很多好的资源
 
 
+Commit
 
+Correct (anisotropic) GGX Smith G function
+selfshadow committed on 23 Feb 2017
 
+This modification yields more correct behaviour for anisotropic materials and removes the previous ad hoc roughness remapping (roughness*.5 + .5). This better reflects current practice at Disney, as discussed in the “Specular G revisited” addendum of the “Physically Based Shading at Disney” SIGGRAPH’12 course notes (http://blog.selfshadow.com/publications/s2012-shading-course/).
 
-
-
-
-
-
+http://blog.selfshadow.com/publications/s2012-shading-course/
 
 
 
