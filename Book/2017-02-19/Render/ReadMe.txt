@@ -1060,6 +1060,16 @@ On Filtering the Noise from the Random Parameters
 in Monte Carlo Rendering
 http://cvc.ucsb.edu/graphics/Papers/Sen2011_RPF/
 
+================
+Publications
+http://blog.selfshadow.com/publications/
+
+Physically Based Shading in Theory and Practice (SIGGRAPH 2017)
+Physically Based Shading in Theory and Practice (SIGGRAPH 2016)
+Physically Based Shading in Theory and Practice (SIGGRAPH 2015)
+Physically Based Shading in Theory and Practice (SIGGRAPH 2014)
+Physically Based Shading in Theory and Practice (SIGGRAPH 2013)
+Practical Physically Based Shading in Film and Game Production (SIGGRAPH 2012)
 
 
 
