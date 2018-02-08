@@ -846,15 +846,89 @@ https://en.wikipedia.org/wiki/Rendering_equation
 Article - Physically Based Rendering
 http://www.codinglabs.net/article_physically_based_rendering.aspx
 
+================
+Article - Physically Based Rendering - Cook¨CTorrance
+http://www.codinglabs.net/article_physically_based_rendering_cook_torrance.aspx
 
+ We are finally there, we can now put together the whole thing into an actual usable formula:
 
+ks¡Ò¦¸DFG4(¦Øo?n)(¦Øi?n))Li(p,¦Øi)(n?¦Øi)d¦Øi¡Öks1N¡Æi=1NLi(¦Øi,p)F(¦Çi,¦Çt,h,¦Øo)G(¦Øi,¦Øo,h,n)sin(¦Èi)4|¦Øo?n||h?n|
 
+That in code we translate to something like this:
+float3 GGX_Specular( TextureCube SpecularEnvmap, float3 normal, float3 viewVector, float roughness, float3 F0, out float3 kS )
+{
+    float3 reflectionVector = reflect(-viewVector, normal);
+    float3x3 worldFrame = GenerateFrame(reflectionVector);
+    float3 radiance = 0;
+    float  NoV = saturate(dot(normal, viewVector));
 
+    for(int i = 0; i < SamplesCount; ++i)
+    {
+        // Generate a sample vector in some local space
+        float3 sampleVector = GenerateGGXsampleVector(i, SamplesCount, roughness);
+        // Convert the vector in world space
+        sampleVector = normalize( mul( sampleVector, worldFrame ) );
 
+        // Calculate the half vector
+        float3 halfVector = normalize(sampleVector + viewVector);
+        float cosT = saturatedDot( sampleVector, normal );
+        float sinT = sqrt( 1 - cosT * cosT);
 
+        // Calculate fresnel
+        float3 fresnel = Fresnel_Schlick( saturate(dot( halfVector, viewVector )), F0 );
+        // Geometry term
+        float geometry = GGX_PartialGeometryTerm(viewVector, normal, halfVector, roughness) * GGX_PartialGeometryTerm(sampleVector, normal, halfVector, roughness);
+        // Calculate the Cook-Torrance denominator
+        float denominator = saturate( 4 * (NoV * saturate(dot(halfVector, normal)) + 0.05) );
+        kS += fresnel;
+        // Accumulate the radiance
+        radiance += SpecularEnvmap.SampleLevel( trilinearSampler, sampleVector, ( roughness * mipsCount ) ).rgb * geometry * fresnel * sinT / denominator;
+    }
 
+    // Scale back for the samples count
+    kS = saturate( kS / SamplesCount );
+    return radiance / SamplesCount;        
+}
 
+By using this Monte Carlo estimator we can evaluate how much light is reflected by the surface and we can then add it to the diffuse component that we have calculated using Lambert. The last thing we need now is to calculate the two weights kd
+and ks. Since these weights represent the amount of light reflected it's natural to immediately think of fresnel. In fact we can use fresnel itself for ks and then, for the energy conservation law, we can derive kd as kd=1?ks
 
+. It's important to notice that in the GGX calculation we have already multiplied the radiance by fresnel, so in the final formula we won't be doing it again.
+float4 PixelShaderFunction(VertexShaderOutput input) : SV_TARGET0
+{
+    ...
+
+    float3 surface = tex2D(surfaceMap_Sampler, input.Texcoord).rgb;   
+    float ior = 1 + surface.r;
+    float roughness = saturate(surface.g - EPSILON) + EPSILON;
+    float metallic = surface.b;
+
+    // Calculate colour at normal incidence
+    float3 F0 = abs ((1.0 - ior) / (1.0 + ior));
+    F0 = F0 * F0;
+    F0 = lerp(F0, materialColour.rgb, metallic);
+        
+    // Calculate the specular contribution
+    float3 ks = 0;
+    float3 specular = GGX_Specular(specularCubemap, normal, viewVector, roughness, F0, ks );
+    float3 kd = (1 - ks) * (1 - metallic);
+    // Calculate the diffuse contribution
+    float3 irradiance = texCUBE(diffuseCubemap_Sampler, normal ).rgb;
+    float3 diffuse = materialColour * irradiance;
+
+    return float4( kd * diffuse + /*ks **/ specular, 1);     
+}
+
+Also, note that kd
+
+is weighted by (1-metallic). This is to simulate the fact that a metallic surface doesn't diffuse light at all, so it can't have a diffuse component.
+
+The final results can be seen in the images below. This is the model lit in different lighting conditions:
+
+ References
+
+[1] Walter et al. "Microfacet Models for Refraction through Rough Surfaces"
+[2] Lazanyi, Szirmay-Kalos, ¡°Fresnel term approximations for Metals¡±
 
 
 
