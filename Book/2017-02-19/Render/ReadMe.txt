@@ -930,14 +930,16 @@ The final results can be seen in the images below. This is the model lit in diff
 [1] Walter et al. "Microfacet Models for Refraction through Rough Surfaces"
 [2] Lazanyi, Szirmay-Kalos, ¡°Fresnel term approximations for Metals¡±
 
+==================
+Microfacet Models for Refraction through Rough Surfaces
+http://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.html
+http://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.pdf
 
+===================
+Fresnel term approximations for Metals
+https://www.researchgate.net/publication/221546550_Fresnel_Term_Approximations_for_Metals
 
-
-
-
-
-
-
+https://www.researchgate.net/profile/Laszlo_Szirmay-Kalos/publication/221546550_Fresnel_Term_Approximations_for_Metals/links/09e41510830d877b0f000000/Fresnel-Term-Approximations-for-Metals.pdf
 
 
 
