@@ -1055,8 +1055,10 @@ http://blog.selfshadow.com/publications/s2012-shading-course/
 11:15 Physically Based Shading at Disney (Brent Burley) [slides: keynote, pdf] [course notes]
 11:45 Reflection Model Design for WALL-E and Up (Brian Smits) [slides: keynote, pdf] [notebook: mathematica, pdf] 
 
-
-
+===============
+On Filtering the Noise from the Random Parameters
+in Monte Carlo Rendering
+http://cvc.ucsb.edu/graphics/Papers/Sen2011_RPF/
 
 
 
