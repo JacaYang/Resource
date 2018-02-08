@@ -941,14 +941,20 @@ https://www.researchgate.net/publication/221546550_Fresnel_Term_Approximations_f
 
 https://www.researchgate.net/profile/Laszlo_Szirmay-Kalos/publication/221546550_Fresnel_Term_Approximations_for_Metals/links/09e41510830d877b0f000000/Fresnel-Term-Approximations-for-Metals.pdf
 
+==============
+EGSR07-btdf.pdf
+
+3.1. Microfacet Distribution Function, D
+The microfacet normal distribution, D(m), describes the statistical
+distri
 
 
+3.2. Shadowing-Masking Function, G
+The bidirectional shadowing-masking function G(i,o,m)
 
-
-
-
-
-
+A wide variety of microfacet distribution functions D
+have been proposed. In this paper, we discuss three different
+types: Beckmann, Phong, and GGX.
 
 
 
