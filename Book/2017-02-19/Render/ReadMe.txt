@@ -1146,8 +1146,9 @@ GGX+Smith
 Microsurfaces
 http://twvideo01.ubm-us.net/o1/vault/gdc2017/Presentations/Hammon_Earl_PBR_Diffuse_Lighting.pdf
 
-
-
+===============
+Ogre vs Unity BRDF #545
+https://github.com/OGRECave/ogre/issues/545
 
 
 
