@@ -1071,6 +1071,109 @@ Physically Based Shading in Theory and Practice (SIGGRAPH 2014)
 Physically Based Shading in Theory and Practice (SIGGRAPH 2013)
 Practical Physically Based Shading in Film and Game Production (SIGGRAPH 2012)
 
+================
+SIGGRAPH 2016 Course: Physically Based Shading in Theory and Practice
+http://blog.selfshadow.com/publications/s2016-shading-course/
+
+14:00 Recent Advances in Physically Based Shading (Naty Hoffman) [slides: pdf]
+14:20 Unified Shading and Asset Development at Lucasfilm and ILM (Roger Cordes and Dan Lobl)
+15:00 Physically Based Sky, Atmosphere and Cloud Rendering in Frostbite (S¨¦bastien Hillaire) [slides: ppt]
+15:30 Break
+15:45 An Artist-Friendly Workflow for Panoramic HDRI (S¨¦bastien Lagarde) [slides: ppt, pdf] [course notes] [supplemental]
+16:05 Physically Based Hair Shading in Unreal (Brian Karis) [slides: ppt, pdf]
+16:25 Practical Real-Time Strategies for Accurate Indirect Occlusion (Jorge Jim¨¦nez) [slides: ppt, pdf]
+16:45 Towards Bidirectional Path Tracing at Pixar (Christophe Hery and Ryusuke Villemin) [course notes]
+
+===============
+SIGGRAPH 2017 Course: Physically Based Shading in Theory and Practice
+http://blog.selfshadow.com/publications/s2017-shading-course/
+
+14:00 Real-Time Line- and Disk-Light Shading (Eric Heitz and Stephen Hill) [slides]
+14:30 Physically Based Shading at DreamWorks Animation (Feng Xie and Jon Lanz) [course notes]
+15:00 Volumetric Skin and Fabric Shading at Framestore (Nathan Walster) [slides] [course notes]
+15:30 Break
+15:45 Practical Multilayered Materials in Call of Duty: Infinite Warfare (Micha? Drobot) [slides: ppt, pdf]
+16:05 Pixar¡¯s Foundation for Materials: PxrSurface and PxrMarschnerHair (Christophe Hery and Junyi Ling) [course notes]
+16:35 Revisiting Physically Based Shading at Imageworks (Christopher Kulla and Alejandro Conty) [slides] [supplemental] 
+
+=================
+SIGGRAPH 2013 Course: Physically Based Shading in Theory and Practice
+http://blog.selfshadow.com/publications/s2013-shading-course/
+
+09:00 Introduction (Stephen Hill)
+09:05 Background: Physics and Math of Shading (Naty Hoffman) [slides] [course notes] [notebook: mathematica, pdf]
+09:20 Getting More Physical in Call of Duty: Black Ops II (Dimitar Lazarov) [slides: ppt, pdf] [course notes] [notebook]
+09:40 Real Shading in Unreal Engine 4 (Brian Karis) [slides: ppt, pdf] [course notes]
+10:00 Crafting a Next-Gen Material Pipeline for The Order: 1886 (David Neubelt & Matt Pettineo) [slides: ppt, pdf] [course notes] [video] [code]
+10:30 Break
+10:45 Everything You Always Wanted to Know About mia_material (Zap Andersson) [slides: ppt, pdf] [course notes]
+11:10 OSL The Great and Powerful (Adam Martinez) [slides]
+11:35 Physically Based Shading at Pixar (Christophe Hery & Ryusuke Villemin) [slides] [course notes] 
+
+==============
+SIGGRAPH 2014 Course: Physically Based Shading in Theory and Practice
+http://blog.selfshadow.com/publications/s2014-shading-course/
+
+14:00 Physics and Math of Shading (Naty Hoffman) [slides]
+14:20 Understanding the Masking-Shadowing Function (Eric Heitz) [slides] [course notes]
+14:40 Antialiasing Physically Based Shading with LEADR Mapping (Jonathan Dupuy) [slides]
+15:00 Designing Reflectance Models for New Consoles (Yoshiharu Gotanda)
+15:30 Break
+15:45 Moving Frostbite to PBR (S¨¦bastien Lagarde & Charles de Rousiers) [slides: pptx, pdf]
+16:15 Physically Based Shader Design in Arnold (Anders Langlands) [slides] [course notes]
+16:35 Art Direction within Pixar¡¯s Physically Based Lighting System (Ian Megibben & Farhez Rayani) 
+
+================
+SIGGRAPH 2015 Course: Physically Based Shading in Theory and Practice
+http://blog.selfshadow.com/publications/s2015-shading-course/
+
+09:00 Introduction
+09:05 Physics and Math of Shading (Naty Hoffman) [slides]
+09:20 layerlab: A Computational Toolbox for Layered Materials (Wenzel Jakob) [slides] [course notes]
+09:40 Approximate Models for Physically Based Rendering (Micha? Iwanicki & Angelo Pesce) [slides]
+10:00 Real-World Measurements for Call of Duty: Advanced Warfare (Danny Chan) [course notes]
+10:30 Break
+10:45 Advanced Lighting R&D at Ready At Dawn Studios (David Neubelt & Matt Pettineo) [slides: ppt, pdf]
+11:15 Extending the Disney BRDF to a BSDF with Integrated Subsurface Scattering (Brent Burley) [slides: keynote, pdf] [course notes]
+11:45 Physically Based Material Modeling at Weta Digital (Luca Fascione) 
+
+===================
+bing	GGX_height_correlated
+
+================
+PBR Diffuse Lighting for 
+GGX+Smith
+Microsurfaces
+http://twvideo01.ubm-us.net/o1/vault/gdc2017/Presentations/Hammon_Earl_PBR_Diffuse_Lighting.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
