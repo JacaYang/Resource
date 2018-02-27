@@ -1150,6 +1150,77 @@ http://twvideo01.ubm-us.net/o1/vault/gdc2017/Presentations/Hammon_Earl_PBR_Diffu
 Ogre vs Unity BRDF #545
 https://github.com/OGRECave/ogre/issues/545
 
+===============
+Unreal Insight：真实角色渲染
+http://gad.qq.com/article/detail/28536
+
+如上图，D项将Beckmann分布中的tan项倒置得到cot项，得到InverseGauss分布函数，该分布函数满足了布料观察得到的能量分布形式。
+
+在UE4的Shader代码中，ClothShading正是受该方法启发，改造GGX得到InvGGX函数作为布料渲染中的D项。
+
+我们来看下UE4Shaders目录下ShadingModels.usf的ClothShading代码：
+// Cloth - Asperity Scattering - Inverse Beckmann Layer 
+    float3 F1 = F_Schlick( FuzzColor, VoH );
+    float  D1 = D_InvGGX( LobeRoughness[1], NoH ); // UE4 ClothShading模型中增加了布料粗糙表面散射的项
+                                                   // 这个方法是通过观察布料得到的
+    float  V1 = Vis_Cloth( NoV, NoL );
+    float3 Spec1 = D1 * V1 * F1;
+    // Generalized microfacet specular
+    float3 F2 = F_Schlick( GBuffer.SpecularColor, VoH );
+    float  D2 = D_GGX( LobeRoughness[1], NoH ) * LobeEnergy[1];
+    float  V2 = Vis_SmithJointApprox( LobeRoughness[1], NoV, NoL );
+    float3 Spec2 = D2 * V2 * F2;
+    float3 Spec = lerp(Spec2, Spec1, Cloth);
+    return Diff + Spec;
+	
+皮肤渲染
+
+在UE4中，次表面散射的计算实现和上面提到的JorgeJimenez提出的方法类似，通过在屏幕空间 卷积次表面的深度贴图，依据光源的位置和散射半径计算出散射颜色。
+
+以下是JorgeJimenez给出的样例代码，详细实现可参考Github
+
+参考资料
+
+    Real Shading in Unreal Engine 4
+    PBR Theory
+    Arbitrarily Layered Micro-Facet Surfaces
+    Moving Frostbite to Physically Based Rendering
+    Importance Sampling for Physically-Based Hair Fiber Models
+    Light Scattering from Human Hair Fibers
+    Photorealistic Character
+    Physically Based Hair Shading in Unreal
+    Screen-Space Perceptual Rendering of Human Skin
+    Distribution-based BRDFs
+    Crafting a Next-Gen Material Pipeline for The Order: 1886
+    Unreal Engine 4给Paragon角色赋予生命
+
+==================
+Separable Subsurface Scattering is a technique that allows to efficiently perform subsurface scattering calculations in screen space in just two passes. http://www.iryoku.com/
+https://github.com/iryoku/separable-sss
+
+参考
+Unreal Insight：真实角色渲染
+http://gad.qq.com/article/detail/28536
+
+皮肤渲染
+
+在UE4中，次表面散射的计算实现和上面提到的JorgeJimenez提出的方法类似，通过在屏幕空间 卷积次表面的深度贴图，依据光源的位置和散射半径计算出散射颜色。
+
+以下是JorgeJimenez给出的样例代码，详细实现可参考Github
+
+=================
+Marschner
+http://www.graphics.stanford.edu/papers/hair/hair-sg03final.pdf
+
+参考
+Unreal Insight：真实角色渲染
+http://gad.qq.com/article/detail/28536
+
+头发光照
+
+Paragon中的头发光线传播模型是基于Marschner的单条头发路径建模的。
+
+
 
 
 
