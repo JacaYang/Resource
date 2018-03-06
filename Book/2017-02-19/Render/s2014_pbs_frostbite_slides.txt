@@ -1,0 +1,30 @@
+
+
+===============
+page : 14
+Height-Correlated Smith [Heitz4]
+Our#specular#term#is#a#tradi1onal#microfacet#model,#using#Schlick¡¯s#approxima1on#of#
+the#Fresnel#func1on,#and#the#GGX#Normal#Distribu1on#Func1on#(NDF).#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

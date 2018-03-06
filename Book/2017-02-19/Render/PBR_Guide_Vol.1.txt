@@ -1,0 +1,48 @@
+PBR_Guide_Vol.1
+
+=============
+page : 6
+Microfacet Theory
+
+===============
+page : 12
+2. Fresnel. The BRDF is handled by the shader. The F0 reflectance value has minimal change
+for most common dielectrics and falls within a range of 2% - 5%. The F0 for metals is a high
+value ranging from 70-100%.
+
+4. Lighting calculations are computed in linear space. All maps that have gamma-encoded
+values such as base color or diffuse are usually converted by the shader to linear, but you may
+have to make sure that the conversion is properly done by checking the appropriate option
+when importing the image in your game engine or renderer. Maps that describe surface
+attributes such as roughness, glossiness, metallic and height should be set to be interpreted as
+linear.
+
+=============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

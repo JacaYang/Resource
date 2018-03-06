@@ -1,0 +1,60 @@
+Physically-Based Shading at Disney
+
+===============
+page : 1
+Following our success with physically-based hair shading on Tangled [27],
+
+=============
+page : 3
+github.com/wdas/brdf
+
+==============
+page : 10
+4.5 Fabric
+
+==============
+page : 12
+5.2 Parameters
+ baseColor - the surface color, usually supplied by texture maps.
+ subsurface - controls diuse shape using a subsurface approximation.
+ metallic - the metallic-ness (0 = dielectric, 1 = metallic). This is a linear blend between two
+dierent models. The metallic model has no diuse component and also has a tinted incident
+specular, equal to the base color.
+ specular - incident specular amount. This is in lieu of an explicit index-of-refraction.
+
+ specularTint - a concession for artistic control that tints incident specular towards the base color.
+Grazing specular is still achromatic.
+ roughness - surface roughness, controls both diuse and specular response.
+ anisotropic - degree of anisotropy. This controls the aspect ratio of the specular highlight. (0 =
+isotropic, 1 = maximally anisotropic).
+ sheen - an additional grazing component, primarily intended for cloth.
+ sheenTint - amount to tint sheen towards base color.
+ clearcoat - a second, special-purpose specular lobe.
+ clearcoatGloss - controls clearcoat glossiness (0 = a \satin" appearance, 1 = a \gloss" appearance).
+
+=============
+page : 14
+5.3 Diuse model details
+Some models include a diuse Fresnel factor such as:
+(1 􀀀 F(l))(1 􀀀 F(d))
+where F() is the Fresnel factor for re
+ection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
