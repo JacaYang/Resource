@@ -6,10 +6,17 @@ Height-Correlated Smith [Heitz4]
 Our#specular#term#is#a#tradi1onal#microfacet#model,#using#Schlick¡¯s#approxima1on#of#
 the#Fresnel#func1on,#and#the#GGX#Normal#Distribu1on#Func1on#(NDF).#
 
+==============
+Page: 52
+This#covers#a#few#types:#
+O#A#distant#light#probe#for#parallaxOfree#far#ligh1ng#
+O#Local#light#probes,#for#local#ligh1ng,#with#parallax#
+O#Screen#space#reflec1ons,#for#closeOrange#ligh1ng#(suppor1ng#glossy#reflec1on)#
+O#Planar#reflec1ons#as#an#alterna1ve#to#SSR#
 
-
-
-
+=============
+Page : 59
+Pre-Integration
 
 
 
