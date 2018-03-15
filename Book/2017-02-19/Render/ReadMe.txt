@@ -1220,6 +1220,20 @@ http://gad.qq.com/article/detail/28536
 
 Paragon中的头发光线传播模型是基于Marschner的单条头发路径建模的。
 
+==============
+https://docs.unrealengine.com/en-us/Engine/Rendering/Materials/PhysicallyBased
+References
+
+1. Lagarde, Feeding a physically based shading model
+http://seblagarde.wordpress.com/2011/08/17/feeding-a-physical-based-lighting-mode/
+2. Karis, Real Shading in Unreal Engine 4
+https://de45xmedrsdbp.cloudfront.net/Resources/files/2013SiggraphPresentationsNotes-26915738.pdf
+3. Burley, Physically-Based Shading at Disney
+http://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_slides_v2.pdf
+4. Smits, Reflection Model Design for WALL-E and Up
+http://blog.selfshadow.com/publications/s2012-shading-course/smits/s2012_pbs_pixar_model_slides_v2.pdf
+5. Hable, Everything is Shiny
+http://www.filmicgames.com/archives/547
 
 
 
