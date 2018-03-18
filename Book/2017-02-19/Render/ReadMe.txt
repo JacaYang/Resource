@@ -1180,19 +1180,31 @@ http://gad.qq.com/article/detail/28536
 以下是JorgeJimenez给出的样例代码，详细实现可参考Github
 
 参考资料
+Real Shading in Unreal Engine 4
+PBR Theory
+Arbitrarily Layered Micro-Facet Surfaces
+Moving Frostbite to Physically Based Rendering
+Importance Sampling for Physically-Based Hair Fiber Models
+Light Scattering from Human Hair Fibers
+Photorealistic Character
+Physically Based Hair Shading in Unreal
+Screen-Space Perceptual Rendering of Human Skin
+Distribution-based BRDFs
+Crafting a Next-Gen Material Pipeline for The Order: 1886
+Unreal Engine 4给Paragon角色赋予生命
 
-    Real Shading in Unreal Engine 4
-    PBR Theory
-    Arbitrarily Layered Micro-Facet Surfaces
-    Moving Frostbite to Physically Based Rendering
-    Importance Sampling for Physically-Based Hair Fiber Models
-    Light Scattering from Human Hair Fibers
-    Photorealistic Character
-    Physically Based Hair Shading in Unreal
-    Screen-Space Perceptual Rendering of Human Skin
-    Distribution-based BRDFs
-    Crafting a Next-Gen Material Pipeline for The Order: 1886
-    Unreal Engine 4给Paragon角色赋予生命
+
+
+https://learnopengl.com/PBR/Theory
+https://www.cg.tuwien.ac.at/research/publications/2007/weidlich_2007_almfs/weidlich_2007_almfs-paper.pdf
+https://cg.ivd.kit.edu/publications/pubhanika/2013_hairbrief.pdf
+http://www.graphics.stanford.edu/papers/hair/hair-sg03final.pdf
+https://docs.unrealengine.com/en-us/Resources/Showcases/PhotorealisticCharacter?utm_source=launcher&utm_medium=ue&utm_campaign=uelearn
+http://www.iryoku.com/sssss/
+http://www.cs.utah.edu/%7Epremoze/dbrdf/dBRDF.pdf
+http://blog.selfshadow.com/publications/s2013-shading-course/rad/s2013_pbs_rad_slides.pdf
+http://mp.weixin.qq.com/s/lF34ypY8pVnp_9W-WvC5kg
+
 
 ==================
 Separable Subsurface Scattering is a technique that allows to efficiently perform subsurface scattering calculations in screen space in just two passes. http://www.iryoku.com/
@@ -1256,15 +1268,36 @@ UE4是如何计算点光源，平行光源产生的最终颜色的？
 http://www.opengpu.org/forum.php?mod=viewthread&tid=18720
 http://blog.selfshadow.com/publi ... s_epic_notes_v2.pdf
 
+==============
+PBR Theory
+https://learnopengl.com/PBR/Theory
+
+Further reading
+Background: Physics and Math of Shading by Naty Hoffmann: there is too much theory to fully discuss in a single article so the theory here barely scratches the surface; if you want to know more about the physics of light and how it relates to the theory of PBR this is the resource you want to read.
+Real shading in Unreal Engine 4: discusses the PBR model adopted by Epic Games in their 4th Unreal Engine installment. The PBR system we'll focus on in these tutorials is based on this model of PBR.
+Marmoset: PBR Theory: an introduction to PBR mostly meant for artists, but nevertheless a good read.
+Coding Labs: Physically based rendering: an introduction to the render equation and how it relates to PBR.
+Coding Labs: Physically Based Rendering - Cook–Torrance: an introduction to the Cook-Torrance BRDF.
+Wolfire Games - Physically based rendering: an introduction to PBR by Lukas Orsv?rn.
+[SH17C] Physically Based Shading: a great interactive shadertoy example (warning: might take a while to load) by Krzysztof Narkowi showcasing light-material interaction in a PBR fashion.
 
 
+https://www.marmoset.co/toolbag/learn/pbr-theory
+http://www.codinglabs.net/article_physically_based_rendering.aspx
+http://www.codinglabs.net/article_physically_based_rendering_cook_torrance.aspx
+http://blog.wolfire.com/2015/10/Physically-based-rendering
+https://www.shadertoy.com/view/4sSfzK
 
 
+==============
+Photorealistic Character
+https://docs.unrealengine.com/en-us/Resources/Showcases/PhotorealisticCharacter?utm_source=launcher&utm_medium=ue&utm_campaign=uelearn
 
+=============
+Screen-Space Perceptual Rendering of Human Skin
+http://www.iryoku.com/sssss/
 
-
-
-
+Screen-space skin rendering is being used in Unreal Engine 3 and Unigine! More in The Technology Behind the DirectX 11 Unreal Engine and in the Unigine Dev Blog.
 
 
 
