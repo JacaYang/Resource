@@ -1235,6 +1235,28 @@ http://blog.selfshadow.com/publications/s2012-shading-course/smits/s2012_pbs_pix
 5. Hable, Everything is Shiny
 http://www.filmicgames.com/archives/547
 
+==============
+SIGGRAPH 2013 Course: Physically Based Shading in Theory and Practice
+http://blog.selfshadow.com/publications/s2013-shading-course/#course_content
+
+Syllabus
+
+09:00 Introduction (Stephen Hill)
+09:05 Background: Physics and Math of Shading (Naty Hoffman) [slides] [course notes] [notebook: mathematica, pdf]
+09:20 Getting More Physical in Call of Duty: Black Ops II (Dimitar Lazarov) [slides: ppt, pdf] [course notes] [notebook]
+09:40 Real Shading in Unreal Engine 4 (Brian Karis) [slides: ppt, pdf] [course notes]
+10:00 Crafting a Next-Gen Material Pipeline for The Order: 1886 (David Neubelt & Matt Pettineo) [slides: ppt, pdf] [course notes] [video] [code]
+10:30 Break
+10:45 Everything You Always Wanted to Know About mia_material (Zap Andersson) [slides: ppt, pdf] [course notes]
+11:10 OSL The Great and Powerful (Adam Martinez) [slides]
+11:35 Physically Based Shading at Pixar (Christophe Hery & Ryusuke Villemin) [slides] [course notes] 
+
+ref
+UE4是如何计算点光源，平行光源产生的最终颜色的？
+http://www.opengpu.org/forum.php?mod=viewthread&tid=18720
+http://blog.selfshadow.com/publi ... s_epic_notes_v2.pdf
+
+
 
 
 
