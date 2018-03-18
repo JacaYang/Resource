@@ -1,0 +1,161 @@
+
+
+===================
+Page : 50
+Bokeh Depth of Field Rendering
+
+References 1/2
+?
+[Buerger07] GPU Rendering of Secondary Effects
+http://wwwcg.in.tum.de/Research/data/Publications/vmv07.pdf
+?
+[Tariq08] Real
+-
+Time Hair Rendering on the GPU 
+http://developer.nvidia.com/object/siggraph
+-
+2008
+-
+hair.html
+?
+[Lauritzen10] Deferred Rendering f
+or Current and Future Rendering Pipelines 
+http://visual
+-
+computing.intel
+-
+research.net/art/publications/deferred_rendering/
+?
+[CodeItNow09] Energy Conservation In Games
+http://www.rorydriscoll.com/2009/01/25/energy
+-
+conservation
+-
+in
+-
+games
+?
+[Lefohn10] Advanced Real
+-
+Time Depth of Field Techniques
+https://graphics.stanford.edu/wikis/cs448s
+-
+10/FrontPage?action=AttachFile&do=get&target=CS448s
+-
+10
+-
+10
+-
+depthOfFieldForWeb.pdf
+?
+[Jimenez09] Screen
+-
+Space Perceptual Rendering of Human Skin 
+http://giga.cps.unizar.es/~diegog/ficheros/pdf_papers/TAP_Jimenez_LR.pdf
+?
+[Shopf09] Mixed Resolution Rendering 
+?
+http://developer.amd.com/gpu_assets/ShopfMixedResolutionRendering.pdf
+?
+[Tomasi98] Bilateral Filtering for Gray and Color Images
+?
+http://www.cs.duke.edu/~tomasi/papers/tomasi/tomasiIccv98.pdf
+?
+[Hargreaves] Deferred Shading
+?
+http://read.pudn.com/downloads160/sourcecode/game/724029/DeferredShading.pdf
+53
+/35
+References 2/2
+?
+[Gruen10] OIT and Indirect Illumination using DX11 Linked Lists
+http://developer.amd.com/gpu_assets/OIT%20and%20Indirect%20Illumination%20using%20DX11
+%20Linked%20Lists_forweb.ppsx
+?
+Robust 
+Multiple Specular Reflections and 
+Refractions
+http://http.developer.nvidia.com/GPUGems3/gpugems3_ch17.html
+?
+[Neulander01] Hair Rendering  (
+Ivan Neulander, Rhythm & Hues Studios
+)
+http://www.rhythm.com/~ivan/hairRender.html
+?
+[Nguyen06] GPU Gems2: Chapter 23. Hair Animation and Rendering in the 
+Nalu
+Demo
+http://http.developer.nvidia.com/GPUGems2/gpugems2_chapter23.html
+?
+[Assarson09] 
+Siggraph
+2009: GPU Primitives
+-
+Case Study: Hair Rendering
+http://s09.idav.ucdavis.edu/talks/07
+-
+Ulf
+-
+GPU
+-
+Prims
+-
+and
+-
+Hair
+-
+course
+-
+slides.pdf
+?
+[Neulander98] Rendering Generalized Cylinders with 
+Paintstrokes
+http://www.rhythm.com/~ivan/pdfs/gi98.pdf
+?
+[LostPlanetD3D10] Lost Planet D3D10 Parallel Rendering
+http://meshula.net/wordpress/?p=124
+?
+[3DMark] 3DMark11 Whitepaper
+http://www.3dmark.com/wp
+-
+content/uploads/2010/12/3DMark11_Whitepaper.pdf
+?
+[Buerger07] GPU Rendering of Secondary Effects
+http://wwwcg.in.tum.de/Research/data/Publications/vmv07.pdf
+?
+[Mikkelsen10] Cross Bilateral Filters for Skin Shading
+http://jbit.net/~sparky/subsurf/cbf_skin.pdf
+54
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

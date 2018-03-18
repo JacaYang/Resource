@@ -1299,9 +1299,22 @@ http://www.iryoku.com/sssss/
 
 Screen-space skin rendering is being used in Unreal Engine 3 and Unigine! More in The Technology Behind the DirectX 11 Unreal Engine and in the Unigine Dev Blog.
 
+Related
+
+2010: Real-Time Realistic Skin Translucency
+2010: A Practical Appearance Model for Dynamic Facial Color
+2011: Practical and Realistic Facial Wrinkles Animation
+2015: Separable Subsurface Scattering
+
+Links
+
+March 10, 2010: Piel virtual que acaricia al espectador (Heraldo de Arag¨®n), in Spanish
+March 10, 2010: Hollywood se fija en la Universidad de Zaragoza (Heraldo de Arag¨®n), in Spanish
 
 
-
+Screen-space skin rendering is being used in Unreal Engine 3 and Unigine! More in The Technology Behind the DirectX 11 Unreal Engine and in the Unigine Dev Blog.
+http://www.nvidia.com/content/PDF/GDC2011/GDC2011EpicNVIDIAComposite.pdf
+https://developer.unigine.com/devlog/
 
 
 
