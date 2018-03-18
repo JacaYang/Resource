@@ -1,0 +1,66 @@
+
+
+=====================
+Core Shading Model 
+?
+Other    BRDFs    available    
+每
+Beckmann    (also    taken    from    Walter    et    al.)    
+每
+Anisotropic    GGX    
+每
+Hair    (
+Kajiya
+--坼Kay)    
+每
+Skin    (pre--坼integrated    diffuse)    
+每
+Cloth    
+
+==============
+Cloth Shading 
+Observa=ons    from    photo    reference:    
+?
+So[    specular    lobe    with    large    smooth    
+falloffs    
+?
+Fuzz    on    the    rim    from    asperity    
+sca\ering    
+?
+Low    specular    contribu=on    at    front    
+facing    angles    
+?
+Some    fabrics    have    two    toned    
+specular    colors    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+
+
+================
+Page : 13
+-
+indirectDiffuse integrator uses
+-
+irradiance caching
+-
+radiosity cache
+-
+photon cache
+-
+reflection integrator uses
+-
+caustic cache
+-
+radiosity cache (optional, in that case we give up 
+secondary specular effects)
+
+======================
+Page : 62
+-
+Eric Veach¡¯s paper: 
+http://
+graphics.stanford.edu/papers/combine
+-
+D-BRDF: 
+http://www.cs.utah.edu/
+~
+premoze/dbrdf/
+dBRDF.pdf
+-
+Siggraph2012 Monte-Carlo Course: https://
+sites.google.com/site/qmcrendering/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
