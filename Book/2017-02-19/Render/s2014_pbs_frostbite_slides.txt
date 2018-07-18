@@ -18,10 +18,18 @@ O#Planar#reflec1ons#as#an#alterna1ve#to#SSR#
 Page : 59
 Pre-Integration
 
+================
+Page: 58
+For#this#we#tried#importance#sampling,#but#it#was#not#enough,#since#importance#
+sampling#just#the#BRDF#¨C#not#the#ligh1ng#¨C#can#lead#to#noise#in#the#case#of#highO
+contrast#sources.#We#tried#mul1ple#importance#sampling#(MIS)#to#take#account#of#
+both#the#BRDF#and#the#ligh1ng,#but#even#if#the#convergence#was#faster,#the#shader#
+cost#was#higher.##
 
-
-
-
+Page : 59
+Instead#we#use#Filtered#Importance#Sampling#(FIS),#which#employs#mipmapped#
+versions#of#the#ligh1ng#in#regions#of#lower#sampling#density.#This#introduces#some#
+bias,#but#it#gives#us#faster#convergence
 
 
 
