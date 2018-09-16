@@ -18,14 +18,26 @@ attributes such as roughness, glossiness, metallic and height should be set to b
 linear.
 
 =============
+Page 7
+F(0) = 0.02
+The F0 range for most common
+dielectrics will be from 0.02 - 0.05 and
+for conductors the F0 range will be
+0.5-1.0.
 
 
+Thus, the reflectivity of a
+surface is determined by the refractive
+index as shown in the following
+equation from Sebastien Lagarde's
+"Feeding a Physically-based Shading
+Model" blog post as shown in figure 10.
 
 
-
-
-
-
+Non-metals
+(dielectrics/insulators) will have a
+greyscale value and metals (conductors)
+will have an RGB value. With
 
 
 
